@@ -1,5 +1,10 @@
 from tkinter import *
 from tkinter import ttk
+from googletrans import Translator, LANGUAGES
+
+
+
+
 
 root = Tk() # creating a object of TK class
 root.title('Google Translator')  # set title of window
