@@ -1,7 +1,13 @@
 # AGTranslator
-Google translator using python
 
 
+<!-- ![AG-Translator-2023-04-20-02](https://user-images.githubusercontent.com/29086241/233202054-21479a5f-ab1c-4cfb-a275-522c83ef273b.gif)-->
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/29086241/233202054-21479a5f-ab1c-4cfb-a275-522c83ef273b.gif" width="500" height="680">
+</div>
+
+Google translator using python:-
 googletrans 3.0.0
 pip install googletrans
 
@@ -33,3 +39,4 @@ Due to limitations of the web version of google translate, this API does not gua
 Important: If you want to use a stable API, I highly recommend you to use Google’s official translate API.
 
 If you get HTTP 5xx error or errors like #6, it’s probably because Google has banned your client IP address.
+
