@@ -23,6 +23,9 @@ comb_sor = ttk.Combobox(frame, value=list_text)  # source language combo box
 comb_sor.place(x=10,y=300,height=40,width=100)
 comb_sor.set("English")  # set default lang. 
 
+button_change = Button(frame, text="Translate", relief=RAISED) # translate button, relief is used to view button as 3D when it's pressed and released.
+button_change.place(x=120,y=300,height=40,width=100)
+
 
 
 
