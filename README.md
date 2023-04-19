@@ -1,4 +1,4 @@
-# GoogleTranslator
+# AGTranslator
 Google translator using python
 
 
