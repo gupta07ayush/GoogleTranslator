@@ -4,7 +4,7 @@
 <!-- ![AG-Translator-2023-04-20-02](https://user-images.githubusercontent.com/29086241/233202054-21479a5f-ab1c-4cfb-a275-522c83ef273b.gif)-->
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/29086241/233202054-21479a5f-ab1c-4cfb-a275-522c83ef273b.gif" width="500" height="680">
+<img src="https://user-images.githubusercontent.com/29086241/233202054-21479a5f-ab1c-4cfb-a275-522c83ef273b.gif" width="500" height="700">
 </div>
 
 Google translator using python:-
