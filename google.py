@@ -2,8 +2,23 @@ from tkinter import *
 from tkinter import ttk
 from googletrans import Translator, LANGUAGES
 
+# function which will use Translator from googletrans to tanslate
+def change(text="type", src="English", dest='Hindi'):
+    text1 = text
+    src1 = src
+    dest1 = dest
+    trans = Translator() #making object of Translator class
+    trans1 = trans.translate(text,src=src1,dest=dest1)# varible which will return, using the translate function of Translate class
+    return trans1
 
-
+# function to get data for translation
+def data():
+    s = comb_sor.get()
+    d = comb_dest.get()
+    msg = sor_txt.get(1.0,END)
+    textget = change(text=msg, src=s, dest=d)
+    dest_txt.delete(1.0,END)
+    dest_txt.insert(END,textget)
 
 
 root = Tk() # creating a object of TK class
@@ -23,18 +38,18 @@ sor_txt = Text(frame, font=("vardana", 20, 'bold'), wrap=WORD )  # making a text
 sor_txt.place(x=10,y=130,height=150,width=480)
 
 # combo box to select source language
-list_text = [1,2,3,4]
+list_text = list(LANGUAGES.values())    #languages list from googletrans
 comb_sor = ttk.Combobox(frame, value=list_text)  # source language combo box
 comb_sor.place(x=10,y=300,height=40,width=150)
 comb_sor.set("English")  # set default lang. 
 
-button_change = Button(frame, text="Translate", relief=RAISED) # translate button, relief is used to view button as 3D when it's pressed and released.
+button_change = Button(frame, text="Translate", relief=RAISED, command=data) # translate button, relief is used to view button as 3D when it's pressed and released.
 button_change.place(x=170,y=300,height=40,width=150)
 
 # combo box for destination lang
 comb_dest = ttk.Combobox(frame, value=list_text)  # destination language combo box
 comb_dest.place(x=330,y=300,height=40,width=150)
-comb_dest.set("Hindi8")  # set default lang.
+comb_dest.set("Hindi")  # set default lang.
 
 
 # Label and text area for destination
